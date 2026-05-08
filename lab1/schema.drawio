@@ -1,0 +1,97 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.5.2 Chrome/142.0.7444.265 Electron/39.6.1 Safari/537.36" version="29.5.2">
+  <diagram name="Страница — 1" id="2ABy4F7IXCBYH8rZ3vvY">
+    <mxGraphModel dx="1489" dy="943" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sqMaVaKtt1oY4rh7vtaG-5" edge="1" parent="1" source="sqMaVaKtt1oY4rh7vtaG-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="sqMaVaKtt1oY4rh7vtaG-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="Actor" User="" id="sqMaVaKtt1oY4rh7vtaG-1">
+          <mxCell parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1">
+            <mxGeometry height="60" width="30" x="110" y="40" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="sqMaVaKtt1oY4rh7vtaG-7" edge="1" parent="1" source="sqMaVaKtt1oY4rh7vtaG-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="sqMaVaKtt1oY4rh7vtaG-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sqMaVaKtt1oY4rh7vtaG-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="GUI (Tkinter)" vertex="1">
+          <mxGeometry height="50" width="120" x="65" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="sqMaVaKtt1oY4rh7vtaG-10" edge="1" parent="1" source="sqMaVaKtt1oY4rh7vtaG-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="sqMaVaKtt1oY4rh7vtaG-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sqMaVaKtt1oY4rh7vtaG-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Модуль загрузки данных&lt;/div&gt;&lt;div&gt;(TXT / RTF)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="65" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="sqMaVaKtt1oY4rh7vtaG-11" edge="1" parent="1" source="sqMaVaKtt1oY4rh7vtaG-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="sqMaVaKtt1oY4rh7vtaG-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sqMaVaKtt1oY4rh7vtaG-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Модуль обработки текста&lt;/div&gt;&lt;div&gt;(нормализация, токенизация)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="145" x="52.5" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="sqMaVaKtt1oY4rh7vtaG-13" edge="1" parent="1" source="sqMaVaKtt1oY4rh7vtaG-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="sqMaVaKtt1oY4rh7vtaG-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sqMaVaKtt1oY4rh7vtaG-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Модуль частотного анализа" vertex="1">
+          <mxGeometry height="60" width="120" x="65" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="sqMaVaKtt1oY4rh7vtaG-23" edge="1" parent="1" source="sqMaVaKtt1oY4rh7vtaG-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="sqMaVaKtt1oY4rh7vtaG-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sqMaVaKtt1oY4rh7vtaG-24" edge="1" parent="1" source="sqMaVaKtt1oY4rh7vtaG-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="sqMaVaKtt1oY4rh7vtaG-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sqMaVaKtt1oY4rh7vtaG-25" edge="1" parent="1" source="sqMaVaKtt1oY4rh7vtaG-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="sqMaVaKtt1oY4rh7vtaG-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_dP5Of-Ey7qxsIMVZyRs-2" edge="1" parent="1" source="sqMaVaKtt1oY4rh7vtaG-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="_dP5Of-Ey7qxsIMVZyRs-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sqMaVaKtt1oY4rh7vtaG-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Словарь словоформ&lt;/div&gt;&lt;div&gt;(слово, частота, морфология)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="145" x="52.5" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="sqMaVaKtt1oY4rh7vtaG-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="команды пользователя" vertex="1">
+          <mxGeometry height="30" width="152.5" x="137.5" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="sqMaVaKtt1oY4rh7vtaG-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="путь к файлу" vertex="1">
+          <mxGeometry height="30" width="152.5" x="140" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="sqMaVaKtt1oY4rh7vtaG-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="исходный текст" vertex="1">
+          <mxGeometry height="30" width="152.5" x="137.5" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="sqMaVaKtt1oY4rh7vtaG-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="список словоформ" vertex="1">
+          <mxGeometry height="30" width="152.5" x="140" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="sqMaVaKtt1oY4rh7vtaG-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="частотный словарь" vertex="1">
+          <mxGeometry height="30" width="152.5" x="130" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="sqMaVaKtt1oY4rh7vtaG-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Поиск / фильтрация" vertex="1">
+          <mxGeometry height="60" width="120" x="260" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="sqMaVaKtt1oY4rh7vtaG-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Сохранение" vertex="1">
+          <mxGeometry height="60" width="120" x="260" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="sqMaVaKtt1oY4rh7vtaG-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Редактирование морфологии" vertex="1">
+          <mxGeometry height="60" width="120" x="260" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="_dP5Of-Ey7qxsIMVZyRs-3" edge="1" parent="1" source="_dP5Of-Ey7qxsIMVZyRs-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="sqMaVaKtt1oY4rh7vtaG-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="335" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_dP5Of-Ey7qxsIMVZyRs-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="GUI" vertex="1">
+          <mxGeometry height="60" width="120" x="275" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="_dP5Of-Ey7qxsIMVZyRs-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Отображение словаря пользователю" vertex="1">
+          <mxGeometry height="30" width="60" x="350" y="313" as="geometry" />
+        </mxCell>
+        <mxCell id="_dP5Of-Ey7qxsIMVZyRs-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="взаимодействие со словарём" vertex="1">
+          <mxGeometry height="30" width="60" x="38" y="637" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

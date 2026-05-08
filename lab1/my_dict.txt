@@ -1,0 +1,9 @@
+and	and	1	1	CC
+cat	cat	1	1	NN
+do	do	1	1	VBP
+fast	fast	1	1	RB
+run	running	2	0	VBG
+run	runs	2	0	verb
+run	ran	1	0	VBD
+stop	stop	1	1	VB
+the	the	1	1	DT
