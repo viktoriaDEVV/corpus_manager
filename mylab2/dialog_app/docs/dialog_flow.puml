@@ -1,0 +1,64 @@
+@startuml Диалоговый процесс
+!theme plain
+skinparam maxMessageSize 300
+
+start
+:Запуск системы;
+:Инициализация FastAPI;
+:Инициализация LiteratureDataStorage;
+:Инициализация LiteratureChatBot (LLM);
+:Инициализация dialog_state;
+
+repeat
+    :Ожидание сообщения от пользователя;
+    :Получение POST /dialog (message);
+    
+    if (Сообщение пустое?) then (Да)
+        :Возврат: "Введите сообщение";
+        note right: Переход к ожиданию\nнового сообщения
+    else (Нет)
+        :Классификация намерения\n_classify_intent();
+        note right: 15 типов:\ngreeting, goodbye, help, clear,\nanalyze, search, statistics,\nupload, documents,\ncharacter, plot, theme,\nauthor, quote, genre
+    endif
+    
+    :Извлечение сущностей\n_extract_entities();
+    note right: Маркеры: analyze:,\nsearch:, character:, etc.
+
+    if (Намерение простое?) then (Да)
+        note right: statistics, greeting,\ngoodbye, help, clear,\nanalyze, documents, search
+        :Генерация ответа\n_generate_response();
+        note right: Прямая обработка\nбез LLM
+    else (Нет)
+        note right: character, plot, theme,\nauthor, quote, genre
+        :chat_bot.get_response();
+        
+        :extract_search_keywords();
+        note right: LLM очистка запроса
+        
+        :retrieve_context();
+        note right: Этап 1: точное совпадение\nЭтап 2: кластерный поиск\nЭтап 3: по документам
+        
+        :generate_answer();
+        note right: LLM генерация ответа\nна основе контекста
+    endif
+    
+    :Сохранение в историю\ndialog_state["history"];
+    
+    if (История > 50?) then (Да)
+        :Обрезка до 50 сообщений;
+    endif
+    
+    :Возврат ответа клиенту;
+    :Отображение в чате (React);
+    
+    if (Намерение == "goodbye"?) then (Да)
+        :dialog_state.active = false;
+        stop
+    endif
+
+repeat while (Диалог активен) is Да
+-> Нет;
+
+:Завершение диалога;
+
+@enduml
